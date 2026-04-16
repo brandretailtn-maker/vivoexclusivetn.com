@@ -16,33 +16,34 @@ nav a:hover{color:#00c6ff;}
 .fade{opacity:0;transform:translateY(20px);transition:1s;}
 .fade.show{opacity:1;transform:translateY(0);}
 .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:22px;text-decoration:none;}
-.image-box {
-  width: 100%;
-  max-width: 900px;
-  height: 400px; /* control height */
-  margin: auto;
+.hero {
+  position: relative;
+  height: 100vh;
   overflow: hidden;
-  border-radius: 15px;
 }
 
-.image-box img {
+.hero-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* key for perfect fit */
-}
-.hero {
-  background: url('imagesimages/store.png') center center / cover no-repeat;
-  height: 100vh; /* Full screen */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover; /* Perfect fit */
 }
 
-.hero .overlay {
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
   background: rgba(0,0,0,0.6);
-  padding: 80px 20px;
+  padding: 60px 20px;
   border-radius: 10px;
   text-align: center;
   color: #fff;
-  max-width: 90%;
+}
+.store-img {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
 }
