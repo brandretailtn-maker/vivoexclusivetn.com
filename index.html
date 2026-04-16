@@ -3,38 +3,97 @@
 <head>
 <title>Vivo Exclusive Store TN</title>
 <style>
-body { font-family: Arial; margin: 40px; }
-h1 { color: darkblue; }
-a { margin-right: 10px; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a1f44;
+    color: white;
+    padding: 15px 30px;
+}
+.nav-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    color: #00c3ff;
+}
+
+/* CONTENT */
+.container {
+    padding: 30px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: darkgreen;
+}
+
+/* IMAGE */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
 </style>
 </head>
 
 <body>
 
-<h1>Vivo Exclusive Store TN</h1>
-<p>Your trusted Vivo mobile store in Tamil Nadu.</p>
+<div class="navbar">
+    <h2 class="logo">Vivo Store TN</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+    </div>
+</div>
 
-<a href="about.html">About</a>
-<a href="products.html">Products</a>
-<a href="contact.html">Contact</a>
-<a href="privacy.html">Privacy</a>
-<a href="terms.html">Terms</a>
-<a href="refund.html">Refund</a>
+<div class="container">
 
-<h2>Our Products</h2>
-<ul>
-<li>Latest Vivo Smartphones</li>
-<li>Mobile Accessories</li>
-<li>Exclusive Offers</li>
-</ul>
+<h1>Welcome to Vivo Exclusive Store TN</h1>
 
-<p><strong>Phone:</strong> +91XXXXXXXXXX</p>
-<p><strong>Email:</strong> youremail@gmail.com</p>
-<p><strong>Address:</strong> Tamil Nadu, India</p>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+    <h3>Latest Smartphones</h3>
+    <p>Explore newest Vivo phones with best offers.</p>
+</div>
 
-<a href="https://wa.me/91XXXXXXXXXX" style="color:green;">
-Chat with us on WhatsApp
-</a>
+<div class="card">
+    <h3>Contact Us</h3>
+    <p>Phone: +91XXXXXXXXXX</p>
+    <p>Email: youremail@gmail.com</p>
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX">WhatsApp Us</a>
+</div>
+
+</div>
 
 </body>
 </html>
