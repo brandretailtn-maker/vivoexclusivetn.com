@@ -189,3 +189,81 @@ nav a:hover {
   font-size: 22px;
   text-decoration: none;
 }
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav div {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .overlay {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* HERO IMAGE */
+  .hero-img {
+    height: 220px; /* smaller for mobile */
+    border-radius: 10px;
+  }
+
+  /* STORE IMAGE */
+  .store-img {
+    height: 220px;
+  }
+
+  /* SECTION */
+  .section {
+    padding: 40px 15px;
+  }
+
+  /* GRID */
+  .grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  /* CARD */
+  .card img {
+    height: 160px;
+  }
+
+  /* BUTTON */
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  /* WHATSAPP BUTTON */
+  .whatsapp {
+    padding: 12px;
+    font-size: 18px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
