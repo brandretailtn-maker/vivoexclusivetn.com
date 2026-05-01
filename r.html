@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <title>Redirecting...</title>
+</head>
+<body>
+
+<script>
+const id = new URLSearchParams(window.location.search).get("id");
+
+if(id){
+  window.location =
+    "https://script.google.com/macros/s/AKfycby9yDr0RNkvtILOvtpwOqjaClsNJWFE0OJ3VvtlpSPGEhJr5UZgZnmnIkCoQV-fDts3Ew/exec?id=" + id;
+}else{
+  document.body.innerHTML = "<h2>Invalid Link</h2>";
+}
+</script>
+
+</body>
+</html>
